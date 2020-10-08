@@ -1,4 +1,6 @@
-//function to get n random non-repeating elements from an array-- I didn't write this, got it online. 
+//Code structure used to randomize URLS to put into qualtrics, to circumvent their built-in randomizer.
+
+	//function to get n random non-repeating elements from an array-- I didn't write this, got it online & forgot to grab the source.  
 	function getRandom(arr, n) {
 	var result = new Array(n),
 	len = arr.length,
@@ -26,7 +28,7 @@
     	sifiOrd = []
     	sifiURLs = []
 	
-	for (i=0; i<=14;i++) { //This is hard-coded to 14 because I wanted 15 repetitions of each stimulus. Change for your experiments. 
+	for (i=0; i<=14;i++) { //This is hard-coded because I wanted 15 repetitions of each stimulus. Change for your experiments. 
         	//Create a larger list of numbers
         	newMat = getRandom(mat1,24);
         	sifiOrd= sifiOrd.concat(newMat);
